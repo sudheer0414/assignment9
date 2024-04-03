@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+        .button-container input[type="reset"],
+        .button-container input[type="submit"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Registration</h1>
+
+    <form action="#" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" size="20" required><br>
+
+        <label for="contact">Contact no:</label><br>
+        <input type="text" id="contact" name="contact" size="20" required><br>
+
+        <label for="days">Days of purchasing:</label><br>
+        <input type="text" id="days" name="days" size="20" required><br>
+
+        <label for="favorite_item">Favorite item:</label><br>
+        <select id="favorite_item" name="favorite_item" required>
+            <option value="">Select</option>
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
+        </select><br>
+
+        <label for="suggestions">Suggestions:</label><br>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br>
+
+        <div class="button-container">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+</html>
